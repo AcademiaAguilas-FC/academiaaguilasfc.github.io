@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+
+    --textoPeq:clamp(1rem, 1vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*FOOTER*/
+
+
+.footer{
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    color: var(--blanco);
+    
+
+}
+
+.footerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto{
+    color: var(--blanco);
+    font-family: var(--textFont);
+    font-size: var(--textoPeq);
+    margin-bottom: 30px;
+}
+
+.footerContacto ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+.footerContacto li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--textoPeq);
+    font-family: var(--textFont);
+}
+
+.icono{
+    width: 20px;
+    height: 20px;
+}
+
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconoRedes{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo{
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+
+
+/* RESPONSIVE - FOOTER */
+
+@media (max-width: 768px) {
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .footerContacto {
+        align-items: center;
+    }
+
+    .contacto {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .footerContacto ul {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footerContacto li {
+        justify-content: center;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .iconoRedes {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+}

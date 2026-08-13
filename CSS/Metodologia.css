@@ -1,0 +1,411 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --textoPrincipal:clamp(5rem, 5vw, 7rem);
+    --textoGrande:clamp(4rem, 4vw, 6rem);
+    --textoMed:clamp(2rem, 3vw, 5rem);
+    --textoPequeño:clamp(1rem, 1.2vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Metodologia inicio*/
+.tituloM{
+    text-align: center;
+    width: fit-content;
+    color: var(--blanco);
+    font-family: var(--textFont);
+    font-size: var(--textoPrincipal);
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin: 0;
+    margin-left: 150px;
+    margin-top: 15%;
+    
+}
+
+
+.fondoM{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../imagenes/imgM/met.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+
+/*contenedores metodologias*/
+
+.ContenedorM1, .ContenedorM3{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: #f5f5f5;
+    padding: 90px;
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+}
+
+
+.infoM1 h3, .infoM3 h3{
+    font-size: var(--textoMed);
+    text-align: right;
+    color: #e3b700;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.infoM1 p, .infoM3 p{
+    font-size: var(--textoPequeño);
+    text-align: right;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+#M1, #M3{
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.ContenedorM2{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: var(--azul);
+    padding: 90px;
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+
+.infoM2 h3{
+    font-size: var(--textoMed);
+    text-align: left;
+    color: var(--blanco);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.infoM2 p{
+    font-size: var(--textoPequeño);
+    text-align: left;
+    color: var(--negro);
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+#M2{
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/*Morfociclo*/
+
+.lineaTiempo{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding: 150px;
+    
+}
+.evento1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: subir 5s ease-in-out infinite;
+}
+.evento2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bajar 5s ease-in-out infinite;
+}
+
+.imgC{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes subir{
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+
+@keyframes bajar{
+    0%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
+
+.morfociclo h1{
+    font-size: var(--textoGrande);
+    color: var(--azul);
+    text-align: center;
+    margin-top: 150px;
+}
+
+.evento1 h3{
+    font-size: clamp(1rem, 1.8vw, 3rem);
+    color: var(--azul);
+    text-align: center;
+
+}
+.evento2 h3{
+    font-size: clamp(1rem, 1.8vw, 3rem);
+    color: var(--amarillo);
+    text-align: center;
+
+}
+.evento1 p, .evento2 p{
+    font-size: var(--textoPequeño);
+    color: var(--negro);
+    text-align: center;
+}
+
+
+/* RESPONSIVE - CELULAR */
+
+@media (max-width: 768px) {
+
+    /* INICIO */
+
+    .fondoM {
+        height: 30vh;
+        margin-bottom: 60px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tituloM {
+        width: 100%;
+        font-size: clamp(2rem, 8vw, 3rem);
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    /* CONTENEDORES DE METODOLOGÍA */
+
+    .ContenedorM1,
+    .ContenedorM2,
+    .ContenedorM3 {
+        width: 80%;
+        padding: 20px;
+        margin: 30px auto;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+
+    /* IMÁGENES */
+
+    #M1,
+    #M2,
+    #M3 {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+
+
+    /* TEXTOS */
+
+    .infoM1 h3,
+    .infoM2 h3,
+    .infoM3 h3 {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .infoM1 p,
+    .infoM2 p,
+    .infoM3 p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+
+    /* MORFOCICLO */
+
+    .morfociclo h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .lineaTiempo {
+        width: 90%;
+        padding: 50px 10px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evento1,
+    .evento2 {
+        animation: none;
+    }
+
+    .imgC {
+        width: 100px;
+        height: 100px;
+    }
+
+    .evento1 h3,
+    .evento2 h3 {
+        font-size: 1.3rem;
+    }
+
+    .evento1 p,
+    .evento2 p {
+        font-size: 1rem;
+        max-width: 280px;
+    }
+
+}
+
+/* RESPONSIVE - TABLET*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* INICIO */
+
+    .fondoM {
+        height: 65vh;
+        margin-bottom: 80px;
+        padding: 30px;
+    }
+
+    .tituloM {
+        font-size: clamp(4rem, 7vw, 6rem);
+        margin-left: 50px;
+        margin-top: 10%;
+    }
+
+
+    /* CONTENEDORES DE METODOLOGÍA */
+
+    .ContenedorM1,
+    .ContenedorM2,
+    .ContenedorM3 {
+        width: 80%;
+        padding: 40px;
+        margin: 40px auto;
+        gap: 35px;
+    }
+
+
+    /* IMÁGENES */
+
+    #M1,
+    #M2,
+    #M3 {
+        width: 40%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    /* TEXTOS */
+
+    .infoM1 h3,
+    .infoM2 h3,
+    .infoM3 h3 {
+        font-size: clamp(2rem, 3vw, 3rem);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .infoM1 p,
+    .infoM2 p,
+    .infoM3 p {
+        font-size: clamp(1rem, 1.5vw, 1.4rem);
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+
+    /* MORFOCICLO */
+
+    .morfociclo h1 {
+        font-size: clamp(3rem, 5vw, 5rem);
+        margin-top: 100px;
+        padding: 0 30px;
+    }
+
+    .lineaTiempo {
+        width: 90%;
+        padding: 80px 20px;
+        gap: 35px;
+        justify-content: center;
+    }
+
+    .evento1,
+    .evento2 {
+        align-items: center;
+    }
+
+    .imgC {
+        width: 100px;
+        height: 100px;
+    }
+
+    .evento1 h3,
+    .evento2 h3 {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+
+    .evento1 p,
+    .evento2 p {
+        font-size: clamp(1rem, 1.5vw, 1.4rem);
+    }
+
+}

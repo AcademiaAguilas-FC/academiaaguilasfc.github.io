@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="CSS/Contactanos.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+</head>
+<header>
+    <div class="secciones">
+            <div class="contenedorLogoS">
+                <a href="index.html">
+                    <img src="imagenes/imgH/LogoS.png" alt= "logo" class="logoS">
+                </a>
+            </div>
+        <a href="index.html" class="buttonS">Inicio</a>
+        <a href="LaAcademia.html" class="buttonS">La Academia</a>
+        <a href="Metodologia.html" class="buttonS">Metodología</a>
+        <a href="NuestroImpacto.html" class="buttonS">Nuestro impacto</a>
+        <a href="Contactanos.html" class="buttonS">Contáctanos</a>
+    </div>
+</header>
+
+<body>
+    <section class="contactanosDatos">
+
+        <h1>Contáctanos</h1>
+
+        <div class="contactoInfo">
+
+            <div class="datos">
+
+                <ul>
+            <li>
+                <img src ="imagenes/imgFT/ub.png" alt="ubicacion" class="icono">
+                Dirección: Calle 17 Sur #14 Sur. Soacha, Cundinamarca
+            </li>
+
+            <li>
+                <img src ="imagenes/imgFT/telf.png" alt="telefono" class="icono">
+                Teléfono: 3204449867
+            </li>
+
+            <li>
+                <img src ="imagenes/imgFT/sobre.png" alt="email" class="icono">
+                Email: aguilas.f.c.soacha@gmail.com
+            </li>
+            <li>
+                <img src ="imagenes/imgFT/clock.png" alt="horario" class="icono">
+                Horario: lunes a domingo 9am a 8pm
+            </li>
+        </ul>
+
+            </div>
+
+            <div class="contactoMapa" id="mapa">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contactanosFormulario">
+
+        <div class="formularioTexto">
+
+            <h2>Escríbenos</h2>
+
+            <form  id="formularioContacto">
+
+                <label>Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+                <label>Correo</label>
+                <input type="email" id="correo" placeholder="Escribe tu correo">
+
+                <label>Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Escribe tu teléfono">
+
+                <label>Mensaje</label>
+                <textarea id="mensaje" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+
+
+            </form>
+
+        </div>
+
+
+            <div class="formularioImagenC">
+                <img src="imagenes/imgC/imgC.jpg" alt="Imagen formulario" id="formularioImagen">
+            </div>
+
+    </section>
+
+    
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
+<div id="notificacion"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+</body>

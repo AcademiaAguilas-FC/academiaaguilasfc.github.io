@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro impacto</title>
+    <link rel="stylesheet" href="CSS/NuestroImpacto.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="secciones">
+            <div class="contenedorLogoS">
+                <a href="index.html">
+                    <img src="imagenes/imgH/LogoS.png" alt= "logo" class="logoS">
+                </a>
+            </div>
+            <a href="index.html" class="buttonS">Inicio</a>
+            <a href="LaAcademia.html" class="buttonS">La Academia</a>
+            <a href="Metodologia.html" class="buttonS">Metodología</a>
+            <a href="NuestroImpacto.html" class="buttonS">Nuestro impacto</a>
+            <a href="Contactanos.html" class="buttonS">Contáctanos</a>
+        </div>
+    </header>
+
+
+
+
+    <div class="IMPN">
+        <h1>Nuestro Impacto</h1>
+    </div>
+
+    <div class="contenedorIMPN">
+        <div class="numeros">
+            <div class="numeros1">
+                <h3>200+</h3>
+                <p>Jugadores activos</p>
+            </div>
+
+            <div class="numeros3">
+                <h3>Sub-7 <br>a<br> Sub-18</h3>
+                <p>Categorías de formación</p>
+            </div>
+
+            <div class="numeros1">
+                <h3>2</h3>
+                <p>Canchas propias de fútbol 11</p>
+            </div>
+
+            <div class="numeros2">
+                <h3>20+</h3>
+                <p>Jugadores en Casa Hogar</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<section class="compromisoSocial">
+
+    <div class="ContenedorCS">
+            <div class="tituloCS">
+                <h3>Compromiso Social</h3>
+            </div>
+            <img src="imagenes/imgNI/comp.jpg" alt="Compromiso Social" id="ImgCS">
+            <div class="infoCS">
+                <p>Nuestro compromiso trasciende la formación deportiva.
+                A través de la Casa Hogar institucional brindamos formación en
+                valores, acompañamiento académico, desarrollo mental y emocional, además
+                de orientar a los jugadores en la construcción de su proyecto de vida.
+                Este trabajo permite impactar no solo a los deportistas, sino también
+                a sus familias y a la comunidad.</p>
+            </div>
+    </div>
+</section>
+
+
+
+
+
+
+    
+<section class="ProyeccionInternacional">
+
+    <h2 class="PITitulo">Proyección Internacional</h2>
+        <div class ="contenedorPI">
+
+
+            <div class ="PIgiro">
+                <div class="PICard">
+                    <div class="PIfront">
+                        <img src="imagenes/imgPI/PI1.png" alt="Identificación icono" >
+                        <h3>SCOUTING</h3>
+                    </div>
+                    <div class="PIback">
+                        <h3>Identificación y seguimiento <br> de talento</h3>
+                        <p>
+                            Evaluamos de manera continua el rendimiento 
+                            de los jugadores para identificar su potencial 
+                            deportivo y fortalecer su proyección hacia el fútbol
+                            profesional mediante procesos de scouting institucional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="PIgiro">
+                <div class="PICard">
+                    <div class="PIfront">
+                        <img src="imagenes/imgPI/PI2.png" alt="Acompañamiento icono">
+                        <h3>REPRESENTACIÓN</h3>
+                    </div>
+                    <div class="PIback">
+                        <h3>Acompañamiento profesional</h3>
+                        <p>
+                            Brindamos orientación y acompañamiento durante <br>
+                            el proceso de crecimiento deportivo, facilitando<br>
+                            oportunidades para que los jugadores continúen su <br>
+                            desarrollo hacia el fútbol profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="PIgiro">
+                <div class ="PICard">
+                    <div class="PIfront">
+                        
+                        <img src="imagenes/imgPI/PI3.png" alt="Proyeccion icono">
+                        <h3>VISIBILIDAD INTERNACIONAL</h3>
+                    </div>
+                    <div class="PIback">
+                        <h3>Proyección internacional<br> de talento</h3>
+                        <p>
+                            Promovemos la proyección de nuestros jugadores<br>
+                            hacia escenarios nacionales e internacionales, generando<br>
+                            oportunidades para su desarrollo deportivo y profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="Socio">
+    <h3>Socios estratégicos de la agencia MV Stars</h3>
+    <img src="imagenes/imgPI/logoMV.png" alt="logo MV Stars" id="LogoMV">
+
+</section>
+
+</body>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>

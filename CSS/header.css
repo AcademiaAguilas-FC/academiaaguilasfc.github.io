@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --tituloSeccion:  clamp(1rem, 1.1vw, 5rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.secciones{
+    background-color: var(--azul);
+    font-family: var(--textFont);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 50px;
+    justify-content: flex-end;
+    
+}
+.buttonS{
+    background-color: transparent;
+    border: none;
+    color: var(--blanco);
+    font-size: var(--tituloSeccion);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contenedorLogoS{
+    margin-right: auto;
+}
+.logoS{
+    width: 150px;
+    height: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 0%;
+    
+}
+
+/*  RESPONSIVE - celular */
+
+@media (max-width: 768px) {
+
+    .secciones {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    .contenedorLogoS {
+        margin-right: 0;
+    }
+
+    .logoS {
+        width: 120px;
+        margin-right: 0;
+    }
+
+    .buttonS {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+/* RESPONSIVE - TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .secciones {
+        gap: 15px;
+        padding: 0 25px;
+    }
+
+    .logoS {
+        width: 120px;
+    }
+
+    .buttonS {
+        font-size: 0.95rem;
+    }
+}

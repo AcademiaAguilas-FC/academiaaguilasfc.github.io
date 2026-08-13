@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Águilas Futbol Club</title>
+    <link rel="stylesheet" href="CSS/LaAcademia.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header>
+        <div class="secciones">
+            <div class="contenedorLogoS">
+                <a href="index.html">
+                    <img src="imagenes/imgH/LogoS.png" alt= "logo" class="logoS">
+                </a>
+            </div>
+                <a href="index.html" class="buttonS">Inicio</a>
+                <a href="LaAcademia.html" class="buttonS">La Academia</a>
+                <a href="Metodologia.html" class="buttonS">Metodología</a>
+                <a href="NuestroImpacto.html" class="buttonS">Nuestro impacto</a>
+                <a href="Contactanos.html" class="buttonS">Contáctanos</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="TituloAcademia">La Academia</h1>
+
+        <div class="academia">
+            <div class="QuienesSomos">
+                <h2>¿Quiénes somos?</h2>
+                <p>Águilas Fútbol Club es una institución formativa con 200 jugadores <br>activos, ubicada en Cundinamarca - Colombia, comprometida con <br>
+                el desarrollo integral de deportistas con proyección hacia el fútbol <br>
+                profesional.<br>Trabajamos bajo lineamientos estructurados y en competencia<br>
+                oficial avalada por la División Aficionada del Fútbol Colombiano,<br>
+                órgano adscrito a la Federación Colombiana de Fútbol. </p>
+            </div>
+
+            <div class="MyV">
+                <div class=" mision">
+                    <h2>Misión</h2>
+                    <p>Formar futbolistas íntegros, disciplinados y competitivos, potenciando su desarrollo
+                        técnico, táctico, físico y mental, con proyección al fútbol profesional nacional e
+                        internacional</p>
+                </div>
+                <div class=" vision">
+                    <h2>Visión</h2>
+                    <p>Para el año 2030, consolidarnos como institución referente a nivel municipal,
+                        departamental , nacional, e internacional, proyectando jugadores al alto rendimiento
+                        y estableciendo alianzas internacionales estratégicas.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <h2 class="INTitulo">Infraestructura</h2>
+        <div class ="IN">
+                <img src="imagenes/imgIN/sedeAd.png" alt="sede administrativa icono" class="imgIN" >
+                <img src="imagenes/imgIN/sedeD.png" alt="sede deportiva icono" class="imgIN">
+                <img src="imagenes/imgIN/canchas.png" alt="canchas icono" class="imgIN">
+                <img src="imagenes/imgIN/espacios.png" alt="espacios icono" class="imgIN">
+                <img src="imagenes/imgIN/gimnasio.png" alt="gimnasio icono" class="imgIN">
+                <img src="imagenes/imgIN/casaH.png" alt="casa hogar icono" class="imgIN">
+
+        </div>
+
+
+    <section class="NuestroADN ">
+        <h2 class="ADNTitulo">Nuestro ADN</h2>
+        <div class ="contenedorADN">
+
+            <div class="ADNCard">
+                <img src="imagenes/imgADN/trabajo.jpg" alt="equipo" >
+                <h3>Trabajo en equipo</h3>
+            </div>
+
+
+
+            <div class="ADNCard">
+
+                <img src="imagenes/imgADN/identidad.jpg" alt="identidad">
+                <h3>Identidad del juego</h3>
+
+            </div>
+
+
+
+            <div class ="ADNCard">
+
+                    
+                <img src="imagenes/imgADN/tecnicaj.jpg" alt="técnica">
+                <h3>Técnica del jugador </h3>
+
+            </div>
+
+
+
+            <div class ="ADNCard">
+
+                <img src="imagenes/imgADN/respeto.jpg" alt="respeto">
+                <h3>Respeto</h3>
+
+            </div>
+
+
+
+            <div class ="ADNCard">
+
+                    
+                <img src="imagenes/imgADN/habilidades.jpg" alt="habilidades">
+                <h3>Habilidades para la vida</h3>
+
+            </div>
+
+
+
+
+            <div class ="ADNCard">
+                <img src="imagenes/imgADN/valores.jpg" alt="Valores del club">
+                <h3>Escucha activa</h3>
+            </div>
+
+
+
+
+            <div class ="ADNCard">
+                <img src="imagenes/imgADN/jugadores.jpg" alt="jugadores">
+                <h3>Jugadores integrales</h3>
+            </div>
+
+
+
+
+            <div class ="ADNCard">
+
+                <img src="imagenes/imgADN/pensm.jpg" alt="Pensamiento ganador">
+                <h3>Pensamiento ganador</h3>
+
+            </div>
+        </div>
+
+
+    </section>
+    </main>
+
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

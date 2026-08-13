@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --textoPrincipal:clamp(5rem, 4vw, 7rem);
+    --textoGrande:clamp(3rem, 3vw, 6rem);
+    --textoMediano:clamp(2rem, 2vw, 5rem);
+    --textoPeq:clamp(1rem, 1vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* CONTACTANOS */
+
+.contactanosDatos{
+    background-color: var(--blanco);
+    padding: 100px 120px;
+    font-family: var(--textFont);
+    font-size: var(--textoPeq);
+}
+
+.contactanosDatos h1{
+    text-align: center;
+    font-size: var(--textoPrincipal);
+    color: var(--azul);
+    margin-bottom: 110px;
+    font-family: var(--textFont);
+}
+
+/* CONTENEDOR INFO + MAPA */
+.contactoInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+/* DATOS */
+.datos ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.datos li{
+    font-size: var(--textoPeq);
+    color: var(--negro);
+    font-family: var(--textFont);
+}
+
+/* MAPA */
+.contactoMapa {
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* FORMULARIO */
+.contactanosFormulario{
+    background-color: var(--gris);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 120px;
+}
+
+
+/* TEXTO FORMULARIO */
+.formularioTexto{
+    width: 500px;
+    
+}
+
+.formularioTexto h2{
+    color: var(--amarillo);
+    font-size: var(--textoGrande);
+    margin-bottom: 40px;
+    font-family: var(--textFont);
+}
+
+
+/* FORMULARIO */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label{
+    font-size: var(--textoPeq);
+    color: var(--negro);
+    font-family: var(--textFont);
+}
+
+form input,
+form textarea{
+    padding: 18px;
+    border: 1px solid #ccc;
+    font-size: var(--textoPeq);
+    border-radius: 5px;
+}
+
+/* BOTON */
+form button{
+    width: 180px;
+    padding: 18px;
+    background-color: var(--amarillo);
+    color: var(--blanco);
+    border: none;
+    font-size: var(--textoPeq);
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+
+/* IMAGEN */
+#formularioImagen{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.formularioImagenC{
+    width: 600px;
+    height: 600px;
+    background-color: #4c9fce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+#notificacion{
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 280px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: var(--blanco);
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+    font-family: var(--textFont);
+    z-index: 1000;
+}
+
+
+
+/* RESPONSIVE - CELULAR */
+
+@media (max-width: 768px) {
+    /* CONTACTANOS */
+
+.contactanosDatos{
+    padding: 60px 20px;
+}
+
+.contactanosDatos h1{
+
+    font-size: clamp(2rem, 12vw, 5rem);
+    margin-bottom: 60px;
+
+}
+
+/* CONTENEDOR INFO + MAPA */
+.contactoInfo{
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* DATOS */
+.datos ul{
+    gap: 18px;
+    padding: 50px;
+}
+
+.datos li{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* MAPA */
+.contactoMapa {
+
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+}
+
+
+/* FORMULARIO */
+.contactanosFormulario{
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px 20px;
+}
+
+
+/* TEXTO FORMULARIO */
+.formularioTexto{
+    width: 80%;
+    max-width: 500px;
+    
+}
+
+
+
+/* BOTON */
+form button{
+    align-self: center;
+    width: 100px;
+    padding: 10px;
+    margin-top: 40px;
+}
+form button:hover{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+
+/* IMAGEN */
+#formularioImagen{
+    width: 250px;
+    height: 250px;
+
+}
+.formularioImagenC{
+    width: 300px;
+    height: 300px;
+
+
+}
+
+
+
+
+}
+
+/* RESPONSIVE - TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+.contactanosDatos h1{
+
+    font-size: clamp(2rem, 7vw, 5rem);
+    margin-bottom: 60px;
+
+}
+
+    /* FORMULARIO */
+.contactanosFormulario{
+    gap: 100px;
+    padding: 100px 150px;
+}
+
+
+/* TEXTO FORMULARIO */
+.formularioTexto{
+    width: 40%;
+    max-width: 600px;
+    
+}
+
+
+/* BOTON */
+form button{
+    align-self: center;
+    width: 100px;
+    padding: 10px;
+    margin-top: 40px;
+}
+form button:hover{
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+
+/* IMAGEN */
+#formularioImagen{
+    width: 320px;
+    height: 320px;
+
+}
+.formularioImagenC{
+    width: 370px;
+    height: 370px;
+
+
+}
+
+
+}

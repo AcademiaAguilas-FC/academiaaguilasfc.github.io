@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --textoPrincipal:clamp(5rem, 5vw, 7rem);
+    --textoGrande:clamp(4rem, 4vw, 6rem);
+    --textoMed:clamp(2rem, 3vw, 5rem);
+    --textoPequeño:clamp(1rem, 1.2vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*LaACADEMIA*/
+.TituloAcademia{
+    margin: 0;
+    padding: 150px;
+    color: var(--negro);
+    font-size: var(--textoPrincipal);
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--gris);
+    font-family: var(--textFont);
+}
+
+
+
+.academia{
+    width: 70%;
+    margin: 100px auto;
+    background: var(--blanco);
+    border: 2px solid var(--amarillo);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.QuienesSomos{
+
+    border-bottom: 2px solid var(--azul);
+
+}
+.QuienesSomos h2{
+    color: var(--azul);
+    font-size: var(--textoMed);
+    margin: 50px 30px;
+    text-align: center;
+    font-family: var(--textFont);
+}
+.QuienesSomos p{
+    color: var(--negro);
+    font-size: var(--textoPequeño);
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: var(--textFont);
+    
+}
+
+
+/*mision y vision*/
+
+.MyV{
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mision, .vision{
+    padding: 30px;
+    max-height: 600px;
+    min-height: 200px;
+    
+}
+
+.mision{
+    border-right: 2px solid var(--amarillo);
+
+}
+.mision h2,
+.vision h2{
+    margin-bottom: 20px;
+    font-size: var(--textoMed);
+    color: var(--azul);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--textFont);
+}
+
+.mision p,
+.vision p{
+    font-size: var(--textoPequeño);
+    font-family: var(--textFont);
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/*infraestructura*/
+
+.INTitulo{
+    text-align: center;
+    font-size: var(--textoGrande);
+    color: var(--amarillo);
+    font-family: var(--textFont);
+
+}
+.IN{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5px;
+    padding: 10px;
+    margin: 100px 200px;
+    max-width: 90%;
+    border: 2px solid var(--amarillo);
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.imgIN{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/*Nuestro adn*/
+
+.NuestroADN{
+    width: 80%;
+    margin: 100px auto;
+}
+
+.ADNTitulo{
+    text-align: center;
+    font-size: var(--textoGrande);
+    color: var(--amarillo);
+    font-family: var(--textFont);
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.ADNCard{
+    background: var(--azul);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ADNCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 28px var(--amarillo);
+
+}
+.contenedorADN{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 150px;
+}
+
+
+.ADNCard img{
+    width:35vh;
+    height: 25vh;
+    margin-bottom: 25px;
+    border-radius: 40px;
+    align-self: center;
+}
+
+.ADNCard h3{
+    text-align: center;
+    font-size: var(--textoPequeño);
+    color: var(--blanco);
+    margin-bottom: 10px;
+    font-family: var(--textFont);
+}
+
+
+
+
+
+
+/* RESPONSIVE - CELULAR */
+
+@media (max-width: 768px) {
+
+    /* TÍTULO */
+
+    .TituloAcademia {
+        padding: 70px 20px;
+        font-size: clamp(3rem, 10vw, 4rem);
+    }
+
+
+    /* QUIÉNES SOMOS */
+
+    .academia {
+    width: 70%;
+    margin: 100px auto;
+    background: var(--blanco);
+    border: 2px solid var(--amarillo);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+    overflow: hidden;
+    height: auto;
+    }
+
+    .QuienesSomos h2 {
+        font-size: 2rem;
+        margin: 30px 20px;
+        
+    }
+
+    .QuienesSomos p {
+        font-size: 0.8rem;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+
+    /* MISIÓN Y VISIÓN */
+
+    .MyV {
+        grid-template-columns: 1fr;
+    }
+
+    .mision,
+    .vision {
+        padding: 20px 20px;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .mision {
+        border-right: none;
+        border-bottom: 2px solid var(--amarillo);
+    }
+
+    .mision h2,
+    .vision h2 {
+        font-size: 2rem;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mision p,
+    .vision p {
+        font-size: 0.8rem;
+        padding: 10px 5px;
+    }
+
+
+    /* INFRAESTRUCTURA */
+
+    .INTitulo {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        padding: 0 20px;
+    }
+
+    .IN {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 85%;
+    max-width: 200px;
+    }
+
+    .imgIN {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+        margin: 20px auto;
+    }
+
+
+    /* NUESTRO ADN */
+
+    .NuestroADN {
+        width: 70%;
+        margin: 70px auto;
+    }
+
+    .ADNTitulo {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        margin-bottom: 50px;
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .contenedorADN {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 80px;
+    }
+
+    .ADNCard {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .ADNCard img {
+        width: 90%;
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .ADNCard h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/*Responsive - TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* TÍTULO */
+
+    .TituloAcademia {
+        padding: 100px 30px;
+        font-size: clamp(4rem, 7vw, 6rem);
+    }
+
+
+    /* QUIÉNES SOMOS + MISIÓN Y VISIÓN */
+
+    .academia {
+        width: 70%;
+        margin: 70px auto;
+    }
+
+    .QuienesSomos h2 {
+        font-size: 2.5rem;
+        margin: 40px 20px;
+    }
+
+    .QuienesSomos p {
+        font-size: 1.1rem;
+        padding: 10px 10px;
+        margin-bottom: 25px;
+    }
+
+
+    /* MISIÓN Y VISIÓN */
+
+    .mision,
+    .vision {
+        padding: 25px 20px;
+        min-height: 250px;
+        max-height: none;
+    }
+
+    .mision h2,
+    .vision h2 {
+        font-size: 2.2rem;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .mision p,
+    .vision p {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+
+
+    /* INFRAESTRUCTURA */
+
+.INTitulo {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+}
+
+.IN {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 70%;
+    max-width: 700px;
+}
+
+.imgIN {
+    width: 80%;
+    height: auto;
+    max-height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
+}
+
+
+    /* NUESTRO ADN */
+
+    .NuestroADN {
+        width: 80%;
+        margin: 60px auto;
+    }
+
+    .ADNTitulo {
+        font-size: clamp(3.5rem, 6vw, 5rem);
+        margin-bottom: 70px;
+        margin-top: 120px;
+    }
+
+    .contenedorADN {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+
+    .ADNCard {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .ADNCard img {
+        width: 90%;
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .ADNCard h3 {
+        font-size: 1.1rem;
+    }
+
+}

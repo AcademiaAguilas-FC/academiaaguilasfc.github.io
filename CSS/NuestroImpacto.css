@@ -1,0 +1,644 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azulOscuro: #1f5a7a;
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --textoPrincipal:clamp(5rem, 4.6vw, 7rem);
+    --textoGrande:clamp(4rem, 4vw, 6rem);
+    --textoMed:clamp(2rem, 3vw, 5rem);
+    --textoPequeño:clamp(1rem, 1.2vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/*NUESTRO IMPACTO*/
+
+.IMPN{
+    background-color: var(--azul);
+    width: 100%;
+    padding: 200px 0;
+}
+
+.IMPN h1{
+    text-align: center;
+    font-size: var(--textoPrincipal);
+    color: var(--blanco);
+    padding: 0;
+    text-align: center;
+    font-family: var(--textFont);
+}
+.contenedorIMPN{
+    background-color: var(--gris);
+    padding: 100px;
+    
+}
+.numeros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 5px auto;
+    max-width: 190px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.numeros > div{
+    background-color: var(--blanco);
+    display: block;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    height: 250px;
+    width: 260px;
+    max-width: 350px;
+    box-shadow: 0px 5px 10px var(--negro);
+    
+}
+.numeros h3{
+    text-align: center;
+    font-size: var(--textoMed);
+    margin-top: 70px;
+    color: var(--amarillo);
+    font-family: var(--textFont);
+}
+.numeros3 h3{
+    text-align: center;
+    font-size: clamp(2rem, 2vw, 5rem);
+    margin-top: 40px;
+    color: var(--azul);
+    margin-bottom: 5px;
+    font-family: var(--textFont);
+}
+
+.numeros p{
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 3rem);
+    font-family: var(--textFont);
+    padding: 15px;
+}
+
+.numeros2 h3{
+    color: var(--azul);
+    font-family: var(--textFont);
+}
+
+
+
+
+/*compromiso social*/
+
+.compromisoSocial{
+    background: var(--gris);
+    padding: 150px 0;
+
+}
+
+.ContenedorCS{
+    width:70%;
+    margin:auto;
+    background:var(--blanco);
+    border-radius:10px;
+    box-shadow:3px 3px 15px rgba(0,0,0,.2);
+    display:grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas:
+        "titulo titulo"
+        "imagen texto";
+    gap:10px;
+    padding: 100px 100px;
+    column-gap: 30px;
+    row-gap: 80px;
+    
+
+}
+
+
+
+.tituloCS{
+
+    font-size: var(--textoMed);
+    color: var(--amarillo);
+    grid-area:titulo;
+    text-align:center;
+    margin: 0 0 30px 0;
+    font-family: var(--textFont);
+
+}
+.infoCS{
+    grid-area:texto;
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    flex:1;
+    margin-top:0;
+    grid-area: texto;
+    align-self: center;
+    max-width: 500px;
+    justify-self: center;
+}
+
+.infoCS p{
+    font-size: var(--textoPequeño);
+    text-align: justify;
+    color: var(--negro);
+    font-family: var(--textFont);
+    line-height: 1.5;
+    grid-area:texto;
+    margin: 0;
+    padding: 0;
+
+}
+
+#ImgCS{
+    grid-area:imagen;
+    width:100%;
+    border-radius:10px;
+    padding: 0;
+    align-self: start;
+}
+
+
+/*Proyeccion internacional*/
+
+
+.ProyeccionInternacional{
+    width: 100%;
+    background-color: var(--azul);
+    padding: 40px 0;
+}
+
+.PITitulo{
+    text-align: center;
+    font-size: clamp(2rem, 3.5vw, 5rem);
+    color: var(--blanco);
+    padding: 100px;
+    font-family: var(--textFont);
+}
+
+
+.PIfront{
+    background: var(--azulOscuro);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    z-index: 2;
+    backface-visibility: hidden;
+    justify-content: center;
+}
+.PICard{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-inline-start:150px;
+    margin-bottom: 200px;
+    transition: transform 1.7s ease;
+    max-width:400px;
+    margin:0 auto;
+
+    
+}
+
+.PIgiro:hover .PICard{
+    transform: rotateY(180deg);
+}
+.PIgiro{
+    transition: transform 0.6s;
+    perspective: 1000px;
+    
+}
+
+.PIfront,.PIback {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    padding: 40px 30px;
+
+}
+
+.PIback{
+    z-index: 1;
+    transform: rotateY(180deg);
+    background: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 3rem);
+    font-family: var(--textFont);
+}
+
+
+.contenedorPI{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    margin-bottom: 200px;
+    perspective: 90px;
+    
+}
+
+
+.PIfront img{
+    margin-bottom: 20px;
+    border-radius: 40px;
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+.PIfront h3{
+    text-align: center;
+    font-size: var(--textoPequeño);
+    font-family: var(--textFont);
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+.PIback h3{
+    text-align: center;
+    font-size: var(--textoPequeño);
+    font-family: var(--textFont);
+    color: var(--amarillo);
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/*socio estrategico*/
+.Socio{
+    width: 100%;
+    background-color: var(--blanco);
+
+}
+.Socio h3{
+    text-align: center;
+    padding-top: 150px;
+    font-size: var(--textoMed);
+    color: var(--amarillo);
+    font-family: var(--textFont);
+}
+#LogoMV{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+/* responsive - CELULAR*/
+
+@media (max-width: 768px) {
+
+    /* ENCABEZADO NUESTRO IMPACTO */
+
+    .IMPN {
+        padding: 80px 20px;
+    }
+
+    .IMPN h1 {
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+
+    /* CONTENEDOR DE NÚMEROS */
+
+    .contenedorIMPN {
+        padding: 50px 20px;
+    }
+
+    .numeros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .numeros > div {
+        width: 90%;
+        max-width: 280px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .numeros h3 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .numeros3 h3 {
+        font-size: 0.9rem;
+        margin-top: 9px;
+    }
+
+    .numeros p {
+        font-size: 0.7rem;
+        padding: 0px 10px;
+    }
+
+
+    /* COMPROMISO SOCIAL */
+
+    .compromisoSocial {
+        padding: 40px 0px;
+    }
+
+    .ContenedorCS {
+        width: 70%;
+        margin: auto;
+        padding: 30px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo"
+            "imagen"
+            "texto";
+        gap: 25px;
+    }
+
+    .tituloCS {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .infoCS {
+        grid-area: texto;
+        width: 100%;
+        max-width: none;
+        justify-self: auto;
+        align-self: auto;
+    }
+
+    .infoCS p {
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    #ImgCS {
+        grid-area: imagen;
+        width: 90%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+
+    /* PROYECCIÓN INTERNACIONAL */
+
+    .ProyeccionInternacional {
+        padding: 30px 0;
+    }
+
+    .PITitulo {
+        font-size: clamp(2rem, 9vw, 4rem);
+        padding: 60px 20px;
+    }
+
+    .contenedorPI {
+        grid-template-columns: 1fr;
+        gap: 90px;
+        margin-bottom: 100px;
+        padding: 2px;
+    }
+
+    .PIgiro {
+        width: 70%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .PICard {
+        width: 90%;
+        height: 280px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .PIfront,
+    .PIback {
+        width: 100%;
+        height: 280px;
+        padding: 25px 20px;
+    }
+
+    .PIfront img {
+        width: 50%;
+        max-width: 140px;
+    }
+
+    .PIfront h3,
+    .PIback h3 {
+        font-size: 1.1rem;
+    }
+
+    .PIback {
+        font-size: 0.8rem;
+    }
+    .PIfront{
+
+        min-height: 150px;
+
+    }
+
+    /* SOCIO ESTRATÉGICO */
+
+    .Socio {
+        width: 100%;
+    }
+
+    .Socio h3 {
+        padding: 80px 20px 0;
+        font-size: 2rem;
+    }
+
+    #LogoMV {
+        width: 200px;
+        max-width: 70%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+/* RESPONSIVE - TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .IMPN {
+        padding: 120px 40px;
+    }
+
+    .IMPN h1 {
+        font-size: clamp(3rem, 6vw, 5rem);
+    }
+
+    .contenedorIMPN {
+        padding: 70px 40px;
+    }
+
+    .numeros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 90%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .numeros > div {
+        width: 100%;
+        max-width: 280px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 35px;
+    }
+
+    .numeros h3 {
+        font-size: 3.5rem;
+        margin-top: 50px;
+    }
+
+    .numeros3 h3 {
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+
+    .numeros p {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+
+
+  /* COMPROMISO SOCIAL */
+
+    .compromisoSocial {
+        padding: 90px 0;
+    }
+
+    .ContenedorCS {
+        width: 85%;
+        padding: 45px 50px;
+
+        grid-template-columns: 45% 1fr;
+
+        grid-template-areas:
+            "titulo titulo"
+            "imagen texto";
+
+        column-gap: 40px;
+        row-gap: 50px;
+    }
+
+    .tituloCS {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 5px;
+    }
+
+    .infoCS {
+        max-width: none;
+    }
+
+    .infoCS p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    #ImgCS {
+        width: 100%;
+    }
+
+
+    /* PROYECCIÓN INTERNACIONAL */
+
+    .ProyeccionInternacional {
+        padding: 30px 0;
+    }
+
+    .PITitulo {
+        font-size: clamp(2rem, 5vw, 4rem);
+        padding: 80px 20px;
+    }
+
+    .contenedorPI {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 150px;
+        padding: 2px;
+    }
+
+    .PIgiro {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .PICard {
+        width: 80%;
+        height: 200px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .PIfront,
+    .PIback {
+        width: 100%;
+        height: 280px;
+        padding: 25px 20px;
+    }
+
+    .PIfront img {
+        width: 50%;
+        max-width: 140px;
+    }
+
+    .PIfront h3,
+    .PIback h3 {
+        font-size: 1.1rem;
+    }
+
+    .PIback {
+        font-size: 0.8rem;
+    }
+    .PIfront{
+
+        min-height: 150px;
+
+    }
+
+
+    /*socio estrategico*/
+
+    .Socio h3{
+        text-align: center;
+        padding-top: 100px;
+        font-size: clamp(2rem, 4vw, 4rem);
+
+    }
+    #LogoMV{
+        width: 200px;
+    }
+
+
+    }

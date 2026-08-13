@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Águilas Futbol Club</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header>
+        
+        <div class="secciones">
+            <div class="contenedorLogoS">
+                <a href="index.html">
+                    <img src="imagenes/imgH/LogoS.png" alt= "logo" class="logoS">
+                </a>
+            </div>
+                <a href="index.html" class="buttonS">Inicio</a>
+                <a href="LaAcademia.html" class="buttonS">La Academia</a>
+                <a href="Metodologia.html" class="buttonS">Metodología</a>
+                <a href="NuestroImpacto.html" class="buttonS">Nuestro impacto</a>
+                <a href="Contactanos.html" class="buttonS">Contáctanos</a>
+        
+        </div>
+        
+    </header>
+        
+    
+    <div class="contenedorInicio">
+        <div class="fondo">
+            <h1 class="tituloPrincipal">Academia Águilas <br>Futbol Club</h1>
+            <a href="LaAcademia.html" class="buttonQuienesSomos">Quienes somos</a>
+        </div>
+    </div>
+
+
+
+
+    <main>
+
+    
+    <h2 class="tituloEnfoque" >Nuestro Enfoque</h2>
+    
+    <div class="contenedorEnfoque">
+        <div class="Enfoque">
+            <img id="imagenP1" src="imagenes/img1.png" alt="Imagen 1">
+            <h3 class="Enfoque-T">Metodología de trabajo</h3>
+            <p class="parrafoE">• Periodización táctica<br>• Seguimiento individual<br>• Formación estructurada</p>
+        </div>
+        <div class="Enfoque">
+            <img id="imagenP2"src="imagenes/img2.png" alt="Imagen 2">
+            <h3 class="Enfoque-T">Competencia Oficial</h3>
+            <p class="parrafoE">• DIFUTBOL<br>• Liga de Cundinamarca<br>• Torneos oficiales.</p>
+        </div>
+        <div class="Enfoque">
+            <img id="imagenP3" src="imagenes/img3.png" alt="Imagen 3">
+            <h3 class="Enfoque-T">Proyección Internacional</h3>
+            <p class="parrafoE">• Scouting<br>• Representación<br>• Visibilidad internacional</p>
+        </div>
+    </div>
+
+<section class="GaleriaS">
+    <h2 class="tituloGaleria">Galeria</h2>
+    <div class="Galeria">
+            <button class="flecha izquierda" onclick="anteriorImagen()">
+                ❮
+            </button>
+        <div class="Carrusel">
+
+            <div class="item lateral">
+                <img id="imgAnterior">
+            </div>
+
+            <div class="item centro">
+                <img id="imgCentro">
+            </div>
+
+            <div class="item lateral">
+                <img id="imgSiguiente">
+            </div>
+
+            </div>
+
+            <button class="flecha derecha" onclick="siguienteImagen()">
+                ❯
+            </button>
+    </div>
+</section>
+
+
+
+        <section class="participacionDeportiva">
+            <h2 class="tituloParticipacion">Participación deportiva</h2>
+            <div class="contenedorParticipacion">
+                
+                <div class="participacion">
+                    <img src="imagenes/imgPD/DF.png" alt="DIFUTBOL" class="imgParticipacion">
+                    <h4>DIFUTBOL</h4>
+                </div>
+
+                <div class="participacion">
+                    
+                    <img src="imagenes/imgPD/LC.png" alt="Liga de Cundinamarca" class="imgParticipacion">
+                    <h4>Liga de Futbol de Cundinamarca</h4>
+                </div>
+
+                <div class="participacion">
+                    
+                    <img src="imagenes/imgPD/BABYF.png" alt="BABY FUTBOL" class="imgParticipacion">
+                    <h4>BABY FUTBOL</h4>
+                </div>
+
+                <div class="participacion">
+                    
+                    <img src="imagenes/imgPD/copaB.png" alt="COPA BON BON BUM" class="imgParticipacion">
+                    <h4>COPA <br>BON BON BUM</h4>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>

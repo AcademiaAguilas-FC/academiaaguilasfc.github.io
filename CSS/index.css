@@ -1,0 +1,504 @@
+/*INDEX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #4c9fce;
+    --amarillo: #e3b700;
+    --gris: #f8f8f8;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --textoPrincipal:clamp(5rem, 5vw, 7rem);
+    --textoGrande:clamp(4rem, 4vw, 6rem);
+    --textoMediano:clamp(2rem, 2vw, 5rem);
+    --textoPeq:clamp(1rem, 1vw, 3rem);
+    --textFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.tituloPrincipal{
+    text-align: center;
+    width: fit-content;
+    color: var(--blanco);
+    font-family: var(--textFont);
+    font-size: var(--textoPrincipal);
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin: 0;
+    margin-left: 110px;
+    margin-top: 200px;
+    
+}
+
+
+.buttonQuienesSomos{
+    background-color:var(--azul);
+    font-family: var(--textFont);
+    padding: 20px 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: var(--textoPeq);
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 370px;
+    text-decoration: none;
+    margin-top: 30px;
+    color: var(--blanco);
+    
+}
+.buttonQuienesSomos:hover{
+    background-color: var(--amarillo);
+    color: var(--blanco);
+}
+
+.fondo{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+/*Nuestro Enfoque*/
+
+.tituloEnfoque{
+    text-align: center;
+    font-size: var(--textoGrande);
+    color: var(--amarillo);
+    font-family: var(--textFont);
+    padding: 100px ;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contenedorEnfoque{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.Enfoque{
+    box-shadow: 0px 1px 4px #636363;
+    background-color:var(--blanco);
+    padding: 20px;
+    font-family: var(--textFont);
+    text-align: center;
+    border-radius: 15px;
+    gap: 20px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+    max-width: 450px;
+
+}
+.Enfoque-T{
+    
+    color: var(--azul);
+    font-size: var(--textoMediano);
+}
+.parrafoE{
+    color: var(--negro);
+    font-size: var(--textoPeq);
+    line-height: 1.5;
+}
+
+#imagenP1,#imagenP2,#imagenP3{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+
+    
+}
+
+
+
+
+/*GALERIA*/
+
+.tituloGaleria{
+    text-align: center;
+    font-size: var(--textoGrande);
+    color: var(--azul);
+    font-family: var(--textFont);
+    padding: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 150px;
+
+}
+
+.Carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width:90%;
+
+}
+
+.centro{
+    width:600px;
+    height:400px;
+}
+
+.lateral{
+    width:400px;
+    height:300px;
+}
+
+.flecha{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--azul);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.flecha:hover{
+    transform: scale(1.1);
+}
+
+.item{
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+/*PARTICIPACIÓN DEPORTIVA*/
+
+.tituloParticipacion{
+    text-align: center;
+    font-size: var(--textoGrande);
+    color: var(--blanco);
+    font-family: var(--textFont);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.contenedorParticipacion{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 90px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--azul);
+
+
+    
+
+}
+.participacion{
+    box-shadow: 0px 3px 7px var(--amarillo);
+    background-color:var(--blanco);
+    font-family: var(--textFont);
+    text-align: center;
+    border-radius: 100%;
+    text-align: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.imgParticipacion{
+    width: 60%;
+    height: 40%;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.participacion h4{
+    color: var(--azul);
+    font-size: var(--textoPeq);
+    margin-bottom: 10px;
+}
+.participacionDeportiva{
+    background-color: var(--azul);
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+
+/*RESPONSIVE - CELULAR */
+
+@media (max-width: 768px) {
+
+    /* INICIO */
+
+    .fondo {
+        height: 70vh;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tituloPrincipal {
+        font-size: clamp(1rem, 10vw, 3rem);
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .buttonQuienesSomos {
+        margin: 20px 0 0 0;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+
+    /* NUESTRO ENFOQUE */
+
+    .tituloEnfoque {
+        font-size: clamp(1rem, 10vw, 3rem);
+        padding: 60px 20px 30px;
+    }
+
+    .contenedorEnfoque {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 70px;
+    }
+
+    .Enfoque {
+        width: 100%;
+        max-width: 400px;
+        margin: 30px 0;
+    }
+
+    .Enfoque-T {
+        font-size: 1.3rem;
+    }
+
+    .parrafoE {
+        font-size: 1rem;
+    }
+
+
+    /* GALERÍA */
+
+    .tituloGaleria {
+        font-size: clamp(1rem, 10vw, 3rem);
+        padding: 60px 20px 30px;
+    }
+
+    .Galeria {
+        padding-bottom: 80px;
+    }
+
+
+        .Carrusel {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .lateral {
+        display: none;
+    }
+
+    .centro {
+        width: 70vw;
+        height: 45vw;
+    }
+
+    .flecha {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        flex-shrink: 0;
+    }
+
+
+
+
+    /* PARTICIPACIÓN DEPORTIVA */
+
+    .tituloParticipacion {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .contenedorParticipacion {
+        gap: 25px;
+        padding: 50px 20px;
+    }
+
+    .participacion {
+        width: 120px;
+        height: 120px;
+    }
+
+    .participacion h4 {
+        font-size: 0.7rem;
+        padding: 0 10px;
+    }
+
+    .imgParticipacion {
+        width: 55%;
+        height: 35%;
+    }
+}
+
+
+/*RESPONSIVE - TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    /* INICIO */
+
+    .fondo {
+        height: 70vh;
+        padding: 30px;
+    }
+
+    .tituloPrincipal {
+        font-size: clamp(3rem, 6vw, 4rem);
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    .buttonQuienesSomos {
+        margin-left: 200px;
+        margin-top: 25px;
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+
+
+    /* NUESTRO ENFOQUE */
+
+    .tituloEnfoque {
+        font-size: clamp(1rem, 10vw, 3rem);
+        padding: 60px 20px 30px;
+    }
+
+    .contenedorEnfoque {
+        gap: 20px;
+        padding: 0 30px;
+    }
+    
+
+    .Enfoque {
+        width: 30%;
+        max-width: 300px;
+        padding: 20px;
+        margin: 25px 0;
+    }
+
+    .Enfoque-T {
+        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    }
+
+    .parrafoE {
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+    }
+
+
+    /* GALERÍA */
+
+    .tituloGaleria {
+        font-size: clamp(3rem, 6vw, 5rem);
+        padding: 70px 30px 40px;
+    }
+
+    .Galeria {
+        padding-bottom: 100px;
+    }
+
+    .Carrusel {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .centro {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    .lateral {
+        width: 15vw;
+        height: 20vw;
+    }
+
+    .flecha {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+
+    /* PARTICIPACIÓN DEPORTIVA */
+
+    .tituloParticipacion {
+        font-size: clamp(3rem, 6vw, 5rem);
+        margin-top: 100px;
+        padding: 0 30px;
+    }
+
+    .contenedorParticipacion {
+        gap: 30px;
+        padding: 70px 30px;
+    }
+
+    .participacion {
+        width: 150px;
+        height: 150px;
+    }
+
+    .imgParticipacion {
+        width: 55%;
+        height: 40%;
+    }
+
+    .participacion h4 {
+        font-size: clamp(0rem, 1.2vw, 1rem);
+    }
+
+}

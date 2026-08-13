@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología</title>
+    <link rel="stylesheet" href="CSS/Metodologia.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="secciones">
+            <div class="contenedorLogoS">
+                <a href="index.html">
+                    <img src="imagenes/imgH/LogoS.png" alt= "logo" class="logoS">
+                </a>
+            </div>
+            <a href="index.html" class="buttonS">Inicio</a>
+            <a href="LaAcademia.html" class="buttonS">La Academia</a>
+            <a href="Metodologia.html" class="buttonS">Metodología</a>
+            <a href="NuestroImpacto.html" class="buttonS">Nuestro impacto</a>
+            <a href="Contactanos.html" class="buttonS">Contáctanos</a>
+        </div>
+    </header>
+
+
+
+    <div class="contenedorM">
+        <div class="fondoM">
+            <h1 class="tituloM">Metodología</h1>
+        </div>
+    </div>
+
+    
+    <div class = "ContenedorM1">
+        
+        <div class="infoM1">
+            <h3>Periodización táctica</h3>
+            <p>La periodización táctica es una metodología basada en el modelo de juego del
+                equipo, que integra los diferentes componentes de la preparación deportiva.
+                Su objetivo es desarrollar los principios y subprincipios que el equipo pretende
+                aplicar en el campo de juego, mediante una planificación organizada del entrenamiento.</p>
+        </div>
+    <img src="imagenes/imgM/M1.jpg" alt="Imagen periodización" id="M1">
+    </div>
+    
+
+    <div class="ContenedorM2">
+        <div class="infoM2">
+            <h3>Desarrollo integral</h3>
+            <p>Formamos futbolistas íntegros, disciplinados y competitivos, fortaleciendo su
+                desarrollo técnico, táctico, físico y mental. Además, promovemos habilidades
+                para la vida, valores institucionales, trabajo en equipo y una mentalidad orientada
+                al aprendizaje y al alto rendimiento.</p>
+        </div>
+    <img src="imagenes/imgM/M2.jpg" alt="Imagen periodización" id="M2">
+    </div>
+
+
+    
+    <div class = "ContenedorM3">
+        <div class="infoM3">
+            <h3>Seguimiento formativo</h3>
+            <p>Cada jugador cuenta con un seguimiento individual durante su proceso de formación.
+            El club mantiene una hoja de vida deportiva digital y, por cada categoría, registra
+            planeaciones, asistencias, calendario de competiciones, informes de partidos
+            e informes mensuales. Además, los entrenadores presentan periódicamente los
+            resultados del trabajo realizado, garantizando un seguimiento continuo del proceso
+            formativo.</p>
+        </div>
+    <img src="imagenes/imgM/M33.jpg" alt="Imagen periodización" id="M3">
+    </div>
+
+
+
+<section class="morfociclo">
+    <h1>Morfociclo semanal</h1>
+    <div class="lineaTiempo">
+
+        <div class="evento1">
+            <div class="circulo">
+                <img src="imagenes/imgM/1.png" class="imgC">
+            </div>
+            <h3>Lunes</h3>
+            <p>Recuperación pasiva</p>
+        </div>
+
+        <div class="evento2">
+            <div class="circulo">
+                <img src="imagenes/imgM/2.png" class="imgC">
+            </div>
+            <h3>Martes</h3>
+            <p>Recuperación activa</p>
+
+        </div>
+
+        <div class="evento1">
+            <img src="imagenes/imgM/3.png" class="imgC">
+            <h3>Miércoles</h3>
+            <p>Adquisición de fuerza</p>
+
+        </div>
+
+        <div class="evento2">
+            <img src="imagenes/imgM/4.png" class="imgC">
+            <h3>Jueves</h3>
+            <p>Adquisición de habilidad</p>
+
+        </div>
+
+        <div class="evento1">
+            <img src="imagenes/imgM/5.png" class="imgC">
+            <h3>Viernes</h3>
+            <p>Trabajos de velocidad</p>
+
+        </div>
+
+        <div class="evento2">
+            <img src="imagenes/imgM/6.png" class="imgC">
+            <h3>Sábado</h3>
+            <p>Activación</p>
+
+        </div>
+        
+        <div class="evento1">
+            <img src="imagenes/imgM/7.png" class="imgC">
+            <h3>Domingo</h3>
+            <p>Partido</p>
+        </div>
+            
+    </div>
+</section>
+
+</body>
+
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
