@@ -272,43 +272,55 @@
     }
 
 
-    /* MORFOCICLO */
+   /* MORFOCICLO */
 
-    .morfociclo h1 {
-        font-size: clamp(2.5rem, 8vw, 4rem);
-        margin-top: 80px;
-        padding: 0 20px;
-    }
+.morfociclo h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-top: 80px;
+    padding: 0 20px;
+}
 
-    .lineaTiempo {
-        width: 90%;
-        padding: 50px 10px;
-        gap: 30px;
-        flex-direction: column;
-        align-items: center;
-    }
+.lineaTiempo {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
-    .evento1,
-    .evento2 {
-        animation: none;
-    }
 
-    .imgC {
-        width: 100px;
-        height: 100px;
-    }
+.evento1,
+.evento2 {
+    animation: none !important;
+    position: relative;
+}
 
-    .evento1 h3,
-    .evento2 h3 {
-        font-size: 1.3rem;
-    }
+/* LUNES - MIÉRCOLES - VIERNES - DOMINGO */
+.evento1 {
+    left: 40px;
+}
 
-    .evento1 p,
-    .evento2 p {
-        font-size: 1rem;
-        max-width: 280px;
-    }
+/* MARTES - JUEVES - SÁBADO */
+.evento2 {
+    left: -40px;
+}
 
+.imgC {
+    width: 100px;
+    height: 100px;
+}
+
+.evento1 h3,
+.evento2 h3 {
+    font-size: 1.3rem;
+}
+
+.evento1 p,
+.evento2 p {
+    font-size: 1rem;
+    max-width: 280px;
+}
 }
 
 /* RESPONSIVE - TABLET*/
