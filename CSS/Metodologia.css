@@ -175,30 +175,33 @@
         transform: translateY(-40px);
     }
 }
-@keyframes moverDerecha{
-    0%{
+@keyframes moverDerecha {
+    0% {
         transform: translateX(0);
     }
-    50%{
+
+    50% {
         transform: translateX(40px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes moverIzquierda{
-    0%{
+@keyframes moverIzquierda {
+    0% {
         transform: translateX(0);
     }
-    50%{
+
+    50% {
         transform: translateX(-40px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-
 .morfociclo h1{
     font-size: var(--textoGrande);
     color: var(--azul);
@@ -314,13 +317,11 @@
 
 
 .evento1 {
-    position: relative;
-    animation: moverDerecha 5s ease-in-out infinite;
+    animation: moverDerecha 3s ease-in-out infinite !important;
 }
 
 .evento2 {
-    position: relative;
-    animation: moverIzquierda 5s ease-in-out infinite;
+    animation: moverIzquierda 3s ease-in-out infinite !important;
 }
 
 .imgC {
