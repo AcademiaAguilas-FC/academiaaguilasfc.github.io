@@ -175,6 +175,29 @@
         transform: translateY(-40px);
     }
 }
+@keyframes moverDerecha{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverIzquierda{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
 .morfociclo h1{
     font-size: var(--textoGrande);
@@ -290,20 +313,14 @@
 }
 
 
-.evento1,
-.evento2 {
-    animation: none !important;
-    position: relative;
-}
-
-/* LUNES - MIÉRCOLES - VIERNES - DOMINGO */
 .evento1 {
-    left: 40px;
+    position: relative;
+    animation: moverDerecha 5s ease-in-out infinite;
 }
 
-/* MARTES - JUEVES - SÁBADO */
 .evento2 {
-    left: -40px;
+    position: relative;
+    animation: moverIzquierda 5s ease-in-out infinite;
 }
 
 .imgC {
