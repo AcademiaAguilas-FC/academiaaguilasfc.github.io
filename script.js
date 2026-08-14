@@ -90,7 +90,6 @@ formulario.addEventListener("submit", function(event){
 }
 
     fetch("https://academiaaguilas-backend.onrender.com/contacto", {
-
         method: "POST",
 
         headers: {
